@@ -1,0 +1,98 @@
+div#filecontent {
+  display: block;
+  justify-content: start;
+}
+
+div.container-fluid {
+  overflow: hidden;
+}
+
+hr { 
+  margin-bottom: 0.1em; 
+}
+
+.mu-card {
+  height: 97%;
+  padding: 1em;
+  margin-top: 1em;
+  overflow: hidden;
+}
+
+div.bannertitle-container {
+  display: block;
+}
+
+div.header {
+  display: block;
+}
+
+div.filelistcontainer { 
+  padding: 0; 
+}
+#filelist { 
+  /* padding-right: 1em; */ 
+  margin-top: 2em 
+}
+
+div.result { 
+  padding-left: 0.7em; 
+}
+div.result-wrapper { 
+  overflow-y: scroll; 
+  padding-left: 0.10em; 
+  height: 90% 
+}
+
+@media only screen and (min-width: 990px) {
+  /* Make content take remainder of the page */
+  div.filelistcontainer { height: calc(100vh - 220px); }
+  div.result { height: calc(100vh - 220px); }
+}
+
+
+/* Vertically align content of title row */
+.title { 
+  display: flex; 
+  flex-flow: row;
+  justify-content: flex-start;
+ }
+.titleText { margin: auto; margin-right: 0.5em; }
+.error-badge { margin: auto; margin-right: 0.5em; }
+.search-indicator { margin: auto; margin-right: 0.5em; }
+
+.titleText {
+  margin-left: 0
+}
+
+.error-badge {
+  opacity: 0.7 !important;
+  font-size: 0.65em !important;
+  margin-left: 0.5em;
+}
+
+.search-indicator {
+  opacity: 0.7;
+  margin-left: 0.5em;
+}
+
+.last-refresh-label {
+  text-align: right;
+}
+
+.pointable {
+    cursor: pointer;
+}
+
+div.bannertitle {
+  /* display: flex; */
+  padding-left: 15px;
+  margin-top: 1.5em;
+}
+div.bannertitle h1 {
+  margin: auto;
+  margin-left: 0;
+}
+.search {
+  margin: auto;
+  margin-right: 15px;
+}
